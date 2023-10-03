@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>CARRITO</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <picture>
+          <a href="/index.html">
+            <img
+              src="/img/branding/logo_light_horizontal.svg"
+              alt="isologotipo de la marca funkoshop"
+            />
+          </a>
+        </picture>
+
+        <!--li*4>a-->
+        <li><a href="./shop.html">SHOP</a></li>
+
+        <li><a href="./pages/contact.html">CONTACTO</a></li>
+
+        <li><a href="./pages/login.html">LOGIN</a></li>
+
+        <li>
+          <a href="/pages/tienda/car.html">
+            <img src="/img/icons/cart-icon.svg" alt="icono del carrito" />
+          </a>
+        </li>
+      </nav>
+    </header>
+
+    <main>
+      <h1>CARRITO DE COMPRAS</h1>
+
+      <section class="detalle">
+        <table >
+          <tr>
+            <th>DETALLE DE PRODUCTO</th>
+            <th>CANTIDAD</th>
+            <th>TOTAL</th>
+          </tr>
+          <tr>
+            <td>
+              <div class="cardDetalle">
+                <picture>
+                  <img
+                    src="/img/star-wars/baby-yoda-1.webp"
+                    alt="Figura coleccionable Funko de Grodu de la serie The Mandolarian"
+                  />
+                </picture>
+
+                <article>
+                  <h5>STAR WARS</h5>
+                  <h2>BABY YODA BLUEBALL</h2>
+                  <p>precio: $ 1799,99</p>
+                </article>
+              </div>
+            </td>
+
+            <td>
+              <div class="agregarCantidad">
+                <input
+                  type="number"
+                  id="idNumero"
+                  name="agregar-quitar"
+                  required
+                  placeholder="0"
+                  value="0"
+                  min="0"
+                />
+                <div class="btnSumarRestar">
+                  <button onclick="agregarUno()">+</button>
+                  <button onclick="restarUno()">-</button>
+                </div>
+              </div>
+            </td>
+
+            <td>
+              <h4>canti x precio $</h4>
+            </td>
+
+            <td>
+              <input type="checkbox" name="check1" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <div class="cardDetalle">
+                <picture>
+                  <img
+                    src="/img/pokemon/pidgeotto-1.webp"
+                    alt="Figura coleccionable Funko de un pidgeotto de la serie Pokemon"
+                  />
+                </picture>
+
+                <article>
+                  <h5>POKEMON</h5>
+                  <h4>PIDGEOTTO</h4>
+                  <p>precio: $ 1799,99</p>
+                </article>
+              </div>
+            </td>
+
+            <td>
+              <div class="agregarCantidad">
+                <input
+                  type="number"
+                  id="idNumero"
+                  name="agregar-quitar"
+                  required
+                  placeholder="0"
+                  value="0"
+                  min="0"
+                />
+                <div class="btnSumarRestar">
+                  <button onclick="agregarUno()">+</button>
+                  <button onclick="restarUno()">-</button>
+                </div>
+              </div>
+            </td>
+
+            <td>
+              <h4>canti x precio $</h4>
+            </td>
+
+            <td>
+              <input type="checkbox" name="check1" />
+            </td>
+          </tr>
+        </table>
+      </section>
+
+      <section class="resumen">
+
+        <h2>RESUMEN</h2>
+        <article class="tiket ">
+            <div class="cantElementos">
+                <h4>CANTIDAD DE ELEMENTOS</h4>
+                <div>9</div>
+            </div>
+
+            <div class="subtotal">
+                <h4>SUBTOTAL</h4>
+                <div>$5.5555.55</div>
+            </div>
+
+            <div class="envio">
+                <h4>ENVIO</h4>
+                <div>$ 0.00</div>
+            </div>
+
+            <div class="Total">
+                <h4>TOTAL</h4>
+                <div>$ 5.555.555</div>
+
+            </div>
+
+        </article>
+
+        <a href=""><h2>IR A PAGAR</h2></a>
+
+      </section>
+    </main>
+
+    <footer>
+      <section>
+        <nav>
+          <ul>
+            <li>
+              <a href="/pages/tienda/shop.html">SHOP</a>
+            </li>
+
+            <li>
+              <a href="./pages/register.html">REGISTRARSE</a>
+            </li>
+
+            <li>
+              <a href="./pages/login.html">LOGIN</a>
+            </li>
+
+            <li>
+              <a href="./pages/contac.html">CONTACTO</a>
+            </li>
+          </ul>
+
+          <picture>
+            <a href="/index.html">
+              <img
+                src="/img/branding/isotype.svg"
+                alt="Isotipo la marca de funko shop"
+              />
+            </a>
+          </picture>
+        </nav>
+      </section>
+
+      <p>All rights reserved 2023 - Funkoshop &copy;</p>
+    </footer>
+
+    <script src="" async defer></script>
+  </body>
+</html>
