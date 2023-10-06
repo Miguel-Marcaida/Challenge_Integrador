@@ -11,13 +11,13 @@
 
   <body>
     <!--Estrutura del Protecto-->
-
+    <!--Utilizamos BEM: block elements modifier-->
     <!--Estrutura- header-->
     <header>
       <!-- inicio header -->
-      <nav>
+      <nav class="navbar container">
         <!--Utilizar el logo para volve al home-->
-        <picture>
+        <picture class="navbar__logo">
           <a href="./index.html">
             <img
               src="./img/branding/logo_light_horizontal.svg"
@@ -26,18 +26,41 @@
           </a>
         </picture>
 
-        <!--li*4>a-->
-        <li><a href="./pages/tienda/shop.html">SHOP</a></li>
+        <ul class="navbar__menu">
+          
+          <li class="navbar__item with-submenu">
+            <a class="navbar__link with-icon" href="./pages/tienda/shop.html">SHOP<iconify-icon icon="octicon:chevron-down-12"></iconify-icon></a>
+            <ul class="submenu">
+              <li class="submenu__item">
+                <a href="" class="submenu__link">Funko</a>
 
-        <li><a href="./pages/contact.html">CONTACTO</a></li>
+              </li>
+              <li class="submenu__item">
+                <a href="" class="submenu__link">Remera</a>
 
-        <li><a href="./pages/admin/login.html">LOGIN</a></li>
+              </li>
+              <li class="submenu__item">
+                <a href="" class="submenu__link">Llavero</a>
 
-        <li>
-          <a href="./pages/tienda/car.html">
-            <img src="./img/icons/cart-icon.svg" alt="icono del carrito" />
-          </a>
-        </li>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="navbar__item">
+            <a  class="navbar__link" href="./pages/contact.html">CONTACTO</a>
+          </li>
+
+          <li class="navbar__item">
+            <a  class="navbar__link" href="./pages/admin/login.html">LOGIN</a>
+          </li>
+
+          <li class="navbar__item">
+            <a class="navbar_cart" href="./pages/tienda/car.html">
+              <img src="./img/icons/cart-icon.svg" alt="icono del carrito" />
+            </a>
+          </li>
+        </ul>
       </nav>
     </header>
     <!-- Fin header -->
@@ -214,6 +237,7 @@
       <p>All rights reserved 2023 - Funkoshop &copy;</p>
     </footer>
     <!-- fin Footer -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script src="" async defer></script>
   </body>
 </html>
