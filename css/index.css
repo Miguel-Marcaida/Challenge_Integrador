@@ -15,7 +15,7 @@
 /* COMPONENTS */
 @import url("./components/slider.css");
 @import url("./components/card.css");
-
+@import url("./components/buttons.css");
 /* pages*/
 @import url("./pages/item.css");
 
