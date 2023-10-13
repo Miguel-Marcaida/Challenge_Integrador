@@ -1,7 +1,11 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 0c37ccc626deeaf2da87e784ad0ac603f22e6012
+=======
+
+>>>>>>> develop
 /* EXTERNAL */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap");
 
@@ -20,14 +24,20 @@
 @import url("./components/slider.css");
 @import url("./components/card.css");
 @import url("./components/buttons.css");
+ @import url("./components/form.css");
 /* pages*/
 @import url("./pages/item.css");
+@import url("./pages/login.css");
 
 
+
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 
 >>>>>>> 0c37ccc626deeaf2da87e784ad0ac603f22e6012
+=======
+>>>>>>> develop
 
 /* HERO*/
 
@@ -139,6 +149,10 @@
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 0c37ccc626deeaf2da87e784ad0ac603f22e6012
+=======
+
+>>>>>>> develop
