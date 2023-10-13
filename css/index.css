@@ -16,8 +16,10 @@
 @import url("./components/slider.css");
 @import url("./components/card.css");
 @import url("./components/buttons.css");
+ @import url("./components/form.css");
 /* pages*/
 @import url("./pages/item.css");
+@import url("./pages/login.css");
 
 
 
