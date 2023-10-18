@@ -5,15 +5,15 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: stretch;
-    gap: var(--spacing-36);
+    gap: var(--spacing-48); 
 }
 
 .create__title{
 
     font-family: var(--alternative-font);
-  color: var(--dark-solid);
-  font-size: var(--font-jumbo);
-  text-align: center;
+    color: var(--dark-solid);
+    font-size: var(--font-jumbo);
+  
   font-weight: 700;
 }
 

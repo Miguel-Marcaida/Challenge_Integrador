@@ -2,12 +2,15 @@
 
 textarea {
     width: 100%;
+    
 }
 textarea::placeholder {
     padding: var(--spacing-8);
     color: gainsboro;
 }
-
+.form__textarea{
+    min-height: 200px;
+}
 .form__flex {
     display: flex;
     gap: var(--spacing-36);
@@ -15,6 +18,10 @@ textarea::placeholder {
 
 .form__btn{
     font-size: var(--font-xsmall);
+}
+
+.form__flex .form__box{
+    flex:  1 1 100%;
 }
 
 .form__label{

@@ -56,17 +56,20 @@
   </header>
 
   <main class="create container">
+    
     <h2 class="create__title">CREAR NUEVO ITEM</h2>
 
     <form class="create__form" action="procesar_formulario.js" method="POST" enctype="multipart/form-data">
+      
       <div class="form__flex">
+        
         <div class="form__box--flex">
           <label class="form__label" for="categoria">Categoría:</label>
           <select class="form__select" id="categoria" name="categoria">
             <option value="" disabled selected>Seleccionar</option>
-            <option value="opcion 1">Nuevo</option>
-            <option value="opcion 2">Promocion</option>
-            <option value="opcion 3">Edicion Especial</option>
+            <option value="opcion 1">Figuras Coleccionables</option>
+            <option value="opcion 2">Llaveros</option>
+            <option value="opcion 3">Remeras</option>
           </select>
         </div>
 
@@ -74,37 +77,39 @@
           <label class="form__label" for="licencia">Licencia:</label>
           <select class="form__select" id="licencia" name="licencia">
             <option value="" disabled selected>Seleccionar</option>
-            <option value="ninguna">Ninguna</option>
-            <option value="licencia1">Licencia 1</option>
-            <option value="licencia2">Licencia 2</option>
+            <option value="licencia1">Star wars</option>
+            <option value="licencia2">Pokemon</option>
+            <option value="licencia3">Harry Potter</option>
           </select>
         </div>
+      
       </div>
 
-      <div class="form__box--grid">
+      <div class="form__box--flex">
         <label class="form__label" for="nombre">Nombre del Producto:</label>
         <input class="form__input" type="text" id="nombre" name="nombre" required
           placeholder="Kakashi Hatake Shippuden Saga" />
       </div>
 
-      <div class="form__box--grid">
+      <div class="form__textarea">
         <!-- <label for="descripcion">Descripción:</label> -->
-        <textarea id="descripcion" name="descripcion" rows="5" required
+        <textarea class="form__textarea" id="descripcion" name="descripcion" rows="5" required
           placeholder="Descripción del Producto"></textarea>
       </div>
 
       <div class="form__flex">
-        <div class="form__box--grid">
+
+        <div class="form__box--flex">
           <label class="form__label" for="sku">SKU:</label>
           <input class="form__input" type="text" id="sku" name="sku" required placeholder="SSK111AB001" />
         </div>
 
-        <div class="form__box--grid">
+        <div class="form__box--flex">
           <label class="form__label" for="precio">Precio:</label>
           <input class="form__input" type="text" id="precio" name="precio" required placeholder="$ 0.000,00" />
         </div>
 
-        <div class="form__box--grid">
+        <div class="form__box--flex">
           <label class="form__label" for="stock">Stock:</label>
           <input class="form__input" type="text" id="stock" name="stock" required placeholder="0" />
         </div>
@@ -122,24 +127,24 @@
             <option value="3">3 cuotas sin Interes</option>
             <option value="6">6 cuotas sin Interes</option>
             <option value="9">9 cuotas sin Interes</option>
+            <option value="12">12 cuotas sin interés</option>
+            <option value="18">18 cuotas sin interés</option>
+            <option value="24">24 cuotas sin nterés</option>
           </select>
         </div>
       </div>
 
       <div class="form__box--flex">
         <label class="form__label" for="imagenes">Imágenes:</label>
-        <input class="form__input" type="file" id="imagenes" name="imagenes[]" multiple />
+        <input  type="file" id="imagenes" name="imagenes[]" multiple />
         <!-- <p>Imágenes no seleccionadas</p> -->
       </div>
 
       <div class="form__flex">
-        <button class="btn btn--primary btn--medium" type="submit" name="agregar">
-          Agregar Producto
-        </button>
-        <button class="btn btn--primary btn--medium" type="reset">
-          Limpiar
-        </button>
+        <button class="form__btn btn btn--primary btn--large" type="submit" name="agregar">Agregar Producto</button>
+        <button class="form__btn btn btn--primary btn--large" type="reset">Limpiar</button>
       </div>
+
     </form>
   </main>
 

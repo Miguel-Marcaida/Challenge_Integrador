@@ -39,3 +39,9 @@ img {
   max-width: 1200px;
   margin: 0 auto; /*arriba y aajo cero, a los costado auto*/
 }
+
+input[type="text"]::placeholder {
+  color: var(--dark-300);
+  font-family: var(--base-font);
+  font-weight: 500;
+}
