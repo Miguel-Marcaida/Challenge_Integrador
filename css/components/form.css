@@ -1,7 +1,5 @@
 /* form components */
-<<<<<<< HEAD
 
-=======
 textarea {
     width: 100%;
 }
@@ -14,7 +12,6 @@ textarea::placeholder {
     display: flex;
     gap: var(--spacing-36);
 }
->>>>>>> master
 
 .form__btn{
     font-size: var(--font-xsmall);
@@ -55,15 +52,13 @@ outline: 0;
     align-items: center;
 }
 
-<<<<<<< HEAD
-=======
+
 .form__box--flex{
     display: flex;
     gap: var(--spacing-12);
     align-items: center;
 }
 
->>>>>>> master
 .form__submission{
     display: flex;
     justify-content: center;
@@ -76,9 +71,6 @@ outline: 0;
     align-items: center;
     font-size: var(--font-medium);
     gap: var(--spacing-8);
-<<<<<<< HEAD
-}
-=======
 }
 
 .form__select{
@@ -89,4 +81,3 @@ outline: 0;
 
 }
 
->>>>>>> master
