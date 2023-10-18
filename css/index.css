@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-=======
->>>>>>> master
 /* EXTERNAL */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap");
 
@@ -24,13 +20,8 @@
 /* pages*/
 @import url("./pages/item.css");
 @import url("./pages/login.css");
-<<<<<<< HEAD
 
-
-
-=======
 @import url("./pages/create.css");
->>>>>>> master
 
 /* HERO*/
 
@@ -140,8 +131,3 @@
 }
 
 
-
-<<<<<<< HEAD
-
-=======
->>>>>>> master
