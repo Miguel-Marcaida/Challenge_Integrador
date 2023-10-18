@@ -9,20 +9,25 @@ textarea::placeholder {
     color: gainsboro;
 }
 .form__textarea{
-    min-height: 200px;
+    height: 200px;
 }
+
+/*container*/
 .form__flex {
     display: flex;
     gap: var(--spacing-36);
 }
 
+.form__flex .form__box{
+    flex:  1 1 100%;
+}
+
+/*button*/
 .form__btn{
     font-size: var(--font-xsmall);
 }
 
-.form__flex .form__box{
-    flex:  1 1 100%;
-}
+/*label ,link  */
 
 .form__label{
 
@@ -39,6 +44,7 @@ textarea::placeholder {
     color: var(--secodary-300);
 }
 
+/*text*/
 
 .form__input{
     padding: 1rem 0.5rem;
@@ -51,6 +57,18 @@ textarea::placeholder {
 .form__input:focus{
 outline: 0;
 }
+
+.form__input--wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.form__input--wrapper .form__input{
+    width: 50%; 
+}
+
+
+/*container field*/
 
 .form__box--grid{
     display: grid;
@@ -66,12 +84,16 @@ outline: 0;
     align-items: center;
 }
 
+/*Container btn enciar*/
+
 .form__submission{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: var(--spacing-16);
 }
+
+/*containre check remember*/
 
 .form__remember{
     display: flex;
@@ -80,6 +102,7 @@ outline: 0;
     gap: var(--spacing-8);
 }
 
+/*container comoboBox*/
 .form__select{
     border-radius: 6px;
     border: 2px solid var(--dark-solid);
@@ -87,4 +110,10 @@ outline: 0;
     padding: var(--spacing-8);
 
 }
-
+/*container check terms*/
+.form__terms{
+    display: flex;
+    align-items: center;
+    font-size: var(--font-xsmall);
+    gap: var(--spacing-8);
+}

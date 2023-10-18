@@ -40,6 +40,12 @@ img {
   margin: 0 auto; /*arriba y aajo cero, a los costado auto*/
 }
 
+.grid-fixed {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
 input[type="text"]::placeholder {
   color: var(--dark-300);
   font-family: var(--base-font);
