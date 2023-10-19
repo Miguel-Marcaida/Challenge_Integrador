@@ -56,13 +56,13 @@
   </header>
 
   <main class="admin container">
-    <section class="admin__search form__box--flex ">
-      <a href="">
-        <img src="/img/icons/search_icon.svg" alt="icono buscar" />
-      </a>
+    <section class="admin__search">
+      <a href=""><img class="admin__icon" src="/img/icons/search_icon.svg" alt="icono buscar" /></a>
       <input class="admin__search-bar" type="text" id="campo" name="agregar" placeholder="nombre, codigo, categoria" />
     </section>
+    
     <section class="admin__list">
+      
       <div class="admin__header ">
         <h2>LISTADO DE PRODUCTOS</h2>
         <span>Agregar <a href="./create.html"><iconify-icon icon="bxs:plus-square" style="color: #f33;"></iconify-icon></a></span>
@@ -70,14 +70,14 @@
 
       <div >
         <table class="admin-table">
-          <thead class="admin-table__header">
-            <tr>
+          <thead >
+            <tr class="admin-table__header">
               <th> ID</th>
               <th> Código</th>
               <th> Nombre del Producto</th>
               <th> Categoría</th>
-              <!-- <th>Editar</th>
-                <th>Eliminar</th> -->
+               <th></th>
+                <th></th> 
             </tr>
           </thead>
           <tbody>

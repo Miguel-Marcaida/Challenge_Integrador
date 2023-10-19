@@ -19,11 +19,13 @@
  @import url("./components/form.css");
 /* pages*/
 @import url("./pages/item.css");
-@import url("./pages/login.css");
 
+@import url("./pages/login.css");
 @import url("./pages/create.css");
 @import url("./pages/edit.css");
 @import url("./pages/register.css");
+@import url("./pages/admin.css");
+
 /* HERO*/
 
 .hero {
