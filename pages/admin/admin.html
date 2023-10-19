@@ -1,75 +1,87 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>ADMIN</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="" />
-  </head>
-  <body>
-    <header>
-      <nav>
-        <picture>
-          <a href="/index.html">
-            <img
-              src="/img/branding/logo_light_horizontal.svg"
-              alt="isologotipo de la marca funkoshop"
-            />
-          </a>
-        </picture>
 
-        <!--li*4>a-->
-        <li><a href="/pages/tienda/shop.html">SHOP</a></li>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>ADMIN</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/css/index.css" />
+</head>
 
-        <li><a href="./pages/contact.html">CONTACTO</a></li>
+<body class="grid-fixed">
+  <header>
+    <!-- inicio header -->
+    <nav class="navbar container">
+      <!--Utilizar el logo para volve al home-->
+      <picture class="navbar__logo">
+        <a href="/index.html">
+          <img src="/img/branding/logo_light_horizontal.svg" alt="isologotipo de la marca funkoshop" />
+        </a>
+      </picture>
 
-        <li><a href="./login.html">LOGIN</a></li>
+      <ul class="navbar__menu">
+        <li class="navbar__item with-submenu">
+          <a class="navbar__link with-icon" href="/pages/tienda/shop.html">SHOP<iconify-icon
+              icon="octicon:chevron-down-12"></iconify-icon></a>
+          <ul class="submenu">
+            <li class="submenu__item">
+              <a href="" class="submenu__link">Funko</a>
+            </li>
+            <li class="submenu__item">
+              <a href="" class="submenu__link">Remera</a>
+            </li>
+            <li class="submenu__item">
+              <a href="" class="submenu__link">Llavero</a>
+            </li>
+          </ul>
+        </li>
 
-        <li>
-          <a href="/pages/tienda/car.html">
+        <li class="navbar__item">
+          <a class="navbar__link" href="/pages/tienda/contact.html">CONTACTO</a>
+        </li>
+
+        <li class="navbar__item">
+          <a class="navbar__link" href="./login.html">LOGIN</a>
+        </li>
+
+        <li class="navbar__item">
+          <a class="navbar_cart" href="/pages/tienda/cart.html">
             <img src="/img/icons/cart-icon.svg" alt="icono del carrito" />
           </a>
         </li>
-      </nav>
-    </header>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-      <section class="buscar">
-        <a href="">
-          <img src="/img/icons/search_icon.svg" alt="icono buscar" />
-        </a>
-        <input
-          type="text"
-          id="campo"
-          name="agregar"
-          placeholder="nombre, codigo, categoria"
-        />
-      </section>
-      <section>
-        <div class="campoAgregar">
-          <h1>LISTADO DE PRODUCTOS</h1>
-          <label for="agregar">AGREGAR:</label>
+  <main class="admin container">
+    <section class="admin__search">
+      <a href=""><img class="admin__icon" src="/img/icons/search_icon.svg" alt="icono buscar" /></a>
+      <input class="admin__search-bar" type="text" id="campo" name="agregar" placeholder="nombre, codigo, categoria" />
+    </section>
+    
+    <section class="admin__list">
+      
+      <div class="admin__header ">
+        <h2>LISTADO DE PRODUCTOS</h2>
+        <span>Agregar <a href="./create.html"><iconify-icon icon="bxs:plus-square" style="color: #f33;"></iconify-icon></a></span>
+      </div>
 
-          <button class="agregar"><a href="./create.html">+</a></button>
-        </div>
-      </section>
-
-      <section class="tabla">
-        <table>
-          <thead>
-            <tr>
-              <th>ID</th>
-              <th>Código</th>
-              <th>Nombre del Producto</th>
-              <th>Categoría</th>
-              <!-- <th>Editar</th>
-              <th>Eliminar</th> -->
+      <div >
+        <table class="admin-table">
+          <thead >
+            <tr class="admin-table__header">
+              <th> ID</th>
+              <th> Código</th>
+              <th> Nombre del Producto</th>
+              <th> Categoría</th>
+               <th></th>
+                <th></th> 
             </tr>
           </thead>
           <tbody>
-            <tr>
+            <tr class="admin-table__row">
               <td>1</td>
               <td>STW001001</td>
               <td>Baby Yoda Blueball</td>
@@ -85,8 +97,8 @@
                 </a>
               </td>
             </tr>
-
-            <tr>
+  
+            <tr class="admin-table__row">
               <td>2</td>
               <td>STW001002</td>
               <td>Boba Fett Fighter</td>
@@ -102,8 +114,8 @@
                 </a>
               </td>
             </tr>
-
-            <tr>
+  
+            <tr class="admin-table__row">
               <td>3</td>
               <td>STW001003</td>
               <td>Luke Skylwalker & Grogu</td>
@@ -119,8 +131,8 @@
                 </a>
               </td>
             </tr>
-
-            <tr>
+  
+            <tr class="admin-table__row">
               <td>4</td>
               <td>STW001004</td>
               <td>Stormtrooper Lightsaber</td>
@@ -138,44 +150,45 @@
             </tr>
           </tbody>
         </table>
-      </section>
-    </main>
+      </div>
 
-    <footer>
-      <section>
-        <nav>
-          <ul>
-            <li>
-              <a href="/pages/tienda/shop.html">SHOP</a>
-            </li>
+    </section>
 
-            <li>
-              <a href="./register.html">REGISTRARSE</a>
-            </li>
+    
+  </main>
 
-            <li>
-              <a href="./login.html">LOGIN</a>
-            </li>
+  <footer class="footer">
+    <nav class="navbar container">
+      <ul class="navbar__item">
+        <li class="navbar__item">
+          <a class="navbar__link" href="/pages/tienda/shop.html">SHOP</a>
+        </li>
 
-            <li>
-              <a href="./pages/contac.html">CONTACTO</a>
-            </li>
-          </ul>
+        <li class="navbar__item">
+          <a class="navbar__link" href="/pages/admin/register.html">REGISTRARSE</a>
+        </li>
 
-          <picture>
-            <a href="/index.html">
-              <img
-                src="/img/branding/isotype.svg"
-                alt="Isotipo la marca de funko shop"
-              />
-            </a>
-          </picture>
-        </nav>
-      </section>
+        <li class="navbar__item">
+          <a class="navbar__link" href="/pages/admin/login.html">LOGIN</a>
+        </li>
 
-      <p>All rights reserved 2023 - Funkoshop &copy;</p>
-    </footer>
+        <li class="navbar__item">
+          <a class="navbar__link" href="/pages/tienda/contact.html">CONTACTO</a>
+        </li>
+      </ul>
 
-    <script src="" async defer></script>
-  </body>
+      <picture>
+        <a href="/index.html">
+          <img src="/img/branding/isotype.svg" alt="Isotipo la marca de funko shop" />
+        </a>
+      </picture>
+    </nav>
+
+    <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
+  </footer>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+  <script src="" async defer></script>
+</body>
+
 </html>
