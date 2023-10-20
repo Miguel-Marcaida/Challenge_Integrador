@@ -3,6 +3,8 @@
     flex-direction: column;
     gap: var(--spacing-24);
     align-items: start;
+    padding: var(--spacing-128) 0;
+    
   }
 
   .cart__title{
@@ -12,28 +14,87 @@
     font-weight: 700;
     text-transform: uppercase;
     border-bottom: 4px solid var(--primary-900);
+    margin-bottom: var(--spacing-48);
   }
 
   .cart-table{
+    width: 100%;
     align-self:stretch;
-    
+    border-collapse: collapse;
+    table-layout: fixed;
   }
 
-  .cart-table__header, .cart-table__row{
-    display:grid;
-    grid-template-columns: 60% 150px 150px 30px;
+
+  .cart-table__header{
+  background-color:  var(--light-bg-solid);
+  color:  var(--dark-solid);
+  font-weight: 700;
+  align-items: center;
+  padding: var(--spacing-8);
+  text-align: center;
+  
+  font-family: var(--base-font);
+  font-size: var(--font-small);
+    
+  }
+  .detail-cell{
+    width: 70%;
+    
+    
+  }
+  .flex-cell{
+    width: 10%;
+    text-align: center;
+  }
+
+ .delete--cell{
+    min-width: 100px;
+  }
+
+ .cart-table__row{
+    /* display:grid;
+    background-color: var(-light-bg-solid);
+    grid-template-columns: 70% 150px 150px 1fr;
     font-family: var(--base-font);
     color: var(--dark-solid);
     font-size: var(--font-small);
-    font-weight: 700;
     align-items: center;
+     */
+     text-align: justify;
+    padding: var(--spacing-8);
+    
   }
-  .cart-table tr{
-    border: 2px solid blue;
+  thead{
+    display:flex; /*table-header-group;*/
+    flex-direction: column;
+    border-spacing: var(--spacing-48);
+    gap:var(--spacing-48);
+    align-items: stretch;
+  }
+  
+  thead th{
+    padding: 10px;
+  }
+
+  tbody{
+    display:flex; /*table-header-group;*/
+    flex-direction: column;
+    margin-top: var(--spacing-24);
+    border-spacing: var(--spacing-48);
+    gap:var(--spacing-48);
+    align-items: stretch;
+  }
+ 
+  tr {
+      
+    display: flex;
+    justify-content: space-between;
     border-collapse: collapse;
     padding: 6px;
     border-radius:  25px ;
-    
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    align-items: center;
   }
 
   
@@ -52,7 +113,7 @@
   }
 
   .detail__content--flex input{
-    width: 100px;
+    width: 50px;
     text-align: center;
     border: none;
     font-size: var(--font-medium);
@@ -62,7 +123,7 @@
   .detail__content-btn{
     display: flex;
     flex-direction: column;
-    font-size: var(--font-xsmall);
+    font-size: var(--font-small);
     align-items: center;
     text-align: center;
   }
