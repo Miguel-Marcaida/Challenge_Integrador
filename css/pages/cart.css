@@ -22,11 +22,11 @@
     align-self:stretch;
     border-collapse: collapse;
     table-layout: fixed;
+    background-color:  var(--light-bg-solid);
   }
 
 
   .cart-table__header{
-  background-color:  var(--light-bg-solid);
   color:  var(--dark-solid);
   font-weight: 700;
   align-items: center;
@@ -38,16 +38,16 @@
     
   }
   .detail-cell{
-    width: 70%;
+    width: 60%;
     
     
   }
   .flex-cell{
-    width: 10%;
+    width: 15%;
     text-align: center;
   }
 
- .delete--cell{
+ .delete-cell{
     min-width: 100px;
   }
 
@@ -79,9 +79,9 @@
   tbody{
     display:flex; /*table-header-group;*/
     flex-direction: column;
-    margin-top: var(--spacing-24);
+    margin-top: var(--spacing-36);
     border-spacing: var(--spacing-48);
-    gap:var(--spacing-48);
+    gap:var(--spacing-36);
     align-items: stretch;
   }
  
@@ -100,7 +100,7 @@
   
   .detail__content--grid{
     display: grid;
-    grid-template-columns:1.5fr 3fr ;
+    grid-template-columns:1fr 3fr ;
     gap: var(--spacing-8);
     align-items: center;
     text-align: start;
@@ -110,14 +110,19 @@
     display: flex;
     gap: var(--spacing-12);
     align-items: center;
+    justify-content: center;
   }
 
   .detail__content--flex input{
-    width: 50px;
+    width: 90px;
+    font-size: var(--font-large);
+    font-family: var(--base-font);
+    font-weight: 700;
     text-align: center;
     border: none;
     font-size: var(--font-medium);
     padding: 4px var(--spacing-8);
+   
   }
 
   .detail__content-btn{
@@ -126,8 +131,28 @@
     font-size: var(--font-small);
     align-items: center;
     text-align: center;
+    justify-content: space-between;
   }
 
+  .detail__content-cell{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+  }
+  .cell-icon__subs-add{
+    color: var(--primary-900);
+    width: var(--spacing-16);
+    height: var(--spacing-16);
+    
+  }
+   .cell-icon__delete{
+    color: var(--primary-900);
+    width: var(--spacing-28);
+    height: var(--spacing-28);
+    
+  }
+ 
   .item-detail{
     display: flex;
     flex: 1fr ;

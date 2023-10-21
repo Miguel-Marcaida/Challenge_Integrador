@@ -71,6 +71,7 @@
         </thead>
 
         <tbody>
+
           <tr >
           
             <td class="cart-table__row detail-cell" >
@@ -95,57 +96,69 @@
               <div class="detail__content--flex">
                 <input type="text" id="idNumero" name="agregar-quitar" required placeholder="0" value="0" min="0" />
                  <div class="detail__content-btn"> 
-                  <span> <a href=""><iconify-icon icon="bxs:plus-square" style="color: #f33;"></iconify-icon></a></span>
-                  <span> <a href=""><iconify-icon icon="bxs:minus-square" style="color: #f33;"></iconify-icon></a></span>
+                  <span class="cell-icon__subs-add"> <a href=""><iconify-icon icon="bxs:plus-square" style="color: #f33;"></iconify-icon></a></span>
+                  <span class="cell-icon__subs-add"> <a  href=""><iconify-icon icon="bxs:minus-square" style="color: #f33;"></iconify-icon></a></span>
                  </div> 
               </div>
             </td>
   
             <td class="cart-table__row flex-cell">
-              <div class="form__box--flex">
+              <div class="detail__content-cell">
                 <h4 class="detail__price">$ 1799,99</h4>
               </div>
               
             </td>
   
             <td class="cart-table__row delete-cell">
-              <span> <a class="detail__content-btn" href=""><iconify-icon icon="bx:x-circle" style="color: #f33;"></iconify-icon></a></span>
+              <div class="detail__content-cell">
+                <span class="cell-icon__delete"> <a href="">
+                  <iconify-icon icon="bx:x-circle" style="color: red;" width="25" height="25"></iconify-icon></a></span> 
+              </div>
               
             </td>
           </tr>
   
           <tr>
-            <td>
-              <div class="cardDetalle">
-                <picture>
-                  <img src="/img/pokemon/pidgeotto-1.webp"
-                    alt="Figura coleccionable Funko de un pidgeotto de la serie Pokemon" />
+            <td class="cart-table__row detail-cell">
+              <div class="detail__content--grid">
+
+                <picture class="item__img card-item__cover">
+                  <img class="card-item__img--front" src="/img/pokemon/pidgeotto-1.webp"
+                  alt="Figura coleccionable Funko de un pidgeotto de la serie Pokemon" />
+                  <img class="card-item__img--back" src="/img/pokemon/pidgeotto-box.webp"
+                  alt="Figura coleccionable Funko de un pidgeotto de la serie Pokemon en caja" />
                 </picture>
   
-                <article>
-                  <h5>POKEMON</h5>
-                  <h4>PIDGEOTTO</h4>
-                  <p>precio: $ 1799,99</p>
+                <article class="item-detail">
+                  
+                  <h2 class="detail__name" >PIDGEOTTO</h2>
+                  <h5 class="detail__license" >POKEMON</h5>
+                  <p class="detail__price">precio: $ 1799,99</p>
                 </article>
               </div>
             </td>
   
-            <td>
-              <div class="agregarCantidad">
-                <input type="number" id="idNumero" name="agregar-quitar" required placeholder="0" value="0" min="0" />
-                <div class="btnSumarRestar">
-                  <button onclick="agregarUno()">+</button>
-                  <button onclick="restarUno()">-</button>
-                </div>
+            <td class="cart-table__row flex-cell">
+              <div class="detail__content--flex">
+                <input type="text" id="idNumero" name="agregar-quitar" required placeholder="0" value="0" min="0" />
+                 <div class="detail__content-btn"> 
+                  <span class="cell-icon__subs-add"> <a href=""><iconify-icon icon="bxs:plus-square" style="color: #f33;"></iconify-icon></a></span>
+                  <span class="cell-icon__subs-add"> <a  href=""><iconify-icon icon="bxs:minus-square" style="color: #f33;"></iconify-icon></a></span>
+                 </div> 
               </div>
             </td>
   
-            <td>
-              <h4>canti x precio $</h4>
+            <td class="cart-table__row flex-cell">
+              <div class="detail__content-cell">
+                <h4 class="detail__price">$ 1799,99</h4>
+              </div>
             </td>
   
-            <td>
-              <input type="checkbox" name="check1" />
+            <td class="cart-table__row delete-cell">
+              <div class="detail__content-cell">
+                <span class="cell-icon__delete"> <a href="">
+                  <iconify-icon icon="bx:x-circle" style="color: red;" width="25" height="25"></iconify-icon></a></span> 
+              </div>
             </td>
           </tr>
   
